@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vpon's Task - Mobile</title>
+    <script language="javascript" type="text/javascript">
+        var wsUri = 'ws://vpon.interview:9000';
+        var output;
+        videos = {};
+        videos[0] = 'https://player.vimeo.com/video/83602546';
+        videos[1] = 'https://player.vimeo.com/video/83602545';
+        function init() {
+            output = document.getElementById("output");
+            testWebSocket();
+        }
+        function testWebSocket() {
+            websocket = new WebSocket(wsUri);
+            websocket.onopen = function(evt) {
+                onOpen(evt)
+            };
+            websocket.onclose = function(evt) {
+                onClose(evt)
+            };
+            websocket.onmessage = function(evt) {
+                onMessage(evt)
+            };
+            websocket.onerror = function(evt) {
+                onError(evt)
+            };
+        }
+        function onOpen(evt) {
+            writeToScreen("CONNECTED");
+            doSend("WebSocket rocks");
+            $('iframe').attr('src', videos[0]);
+        }
+        function onClose(evt) {
+            writeToScreen("DISCONNECTED");
+        }
+        function onMessage(evt) {
+            writeToScreen('RESPONSE: ' + evt.data+'');
+        }
+        function onError(evt) {
+            writeToScreen('ERROR: ' + evt.data);
+        }
+        function doSend(message) {
+            writeToScreen("SENT: " + message);
+            websocket.send(message);
+        }
+        function writeToScreen(message) {
+            var pre = document.createElement("p"); pre.style.wordWrap = "break-word"; pre.innerHTML = message; output.appendChild(pre);
+        }
+        window.addEventListener("load", init, false);
+    </script>
+</head>
+<body>
+    <h2>WebSocket Test</h2>
+    <div id="output"></div>
+    <p id="status"></p>
+    <iframe src="" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <button id="changeBtn">change index video</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
