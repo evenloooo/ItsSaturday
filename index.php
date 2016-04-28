@@ -28,7 +28,7 @@ $is_mobile = preg_match('/android|webos|iphone|ipad|ipod|blackberry|iemobile|ope
     }
 </style>
 <?if(!$is_mobile) {?>
-<h2>WebSocket Test</h2>
+<h2>Vpon's task by Even Lo</h2>
 <div id="output"></div>
 <p id="status"></p>
 <iframe src="https://player.vimeo.com/video/83602545?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="player1"></iframe>

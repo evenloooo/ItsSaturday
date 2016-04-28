@@ -48,6 +48,5 @@ var wsUri = 'ws://creative.even.pw:9000';
             websocket.send(message);
         }
         function writeToScreen(message) {
-            var pre = document.createElement("p"); pre.style.wordWrap = "break-word"; pre.innerHTML = message; output.appendChild(pre);
         }
         window.addEventListener("load", init, false);
