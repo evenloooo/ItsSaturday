@@ -108,7 +108,7 @@ $is_mobile = check_user_agent('mobile');
 </div>
 <?} else {?>
 <h3 class="mobileTitle">
- 向左轉，向右轉。
+ 向左轉，向右轉。<br>你的動作將會影響在電腦上正播放的影片。
 </h3>
 <?}?>
 
