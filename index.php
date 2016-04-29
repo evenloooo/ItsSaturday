@@ -6,6 +6,8 @@ $is_mobile = preg_match('/android|webos|iphone|ipad|ipod|blackberry|iemobile|ope
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
+    <meta name="description" content="用手機來控制電腦上的影片吧！" />
+    <meta name="author" content="EvenLo" />
     <title>Vpon's task</title>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
