@@ -51,6 +51,10 @@ $is_mobile = preg_match('/android|webos|iphone|ipad|ipod|blackberry|iemobile|ope
     display: table;
     margin: 0 auto;
   }
+  img {
+    border: 1px solid;
+    width:100%;
+  }
 </style>
 <?if(!$is_mobile) {?>
 <h2>Vpon's task</h2>
@@ -62,11 +66,14 @@ $is_mobile = preg_match('/android|webos|iphone|ipad|ipod|blackberry|iemobile|ope
   <h3>用你的手機來控制影片吧！</h3>
   <h5>用手機打開網址 <a href="http://creative.even.pw/">http://creative.even.pw/</a>，透過旋轉來控制影片</h5>
   <div class="row">
-    <div class="col-md-6">
-      <img src="assets/img/tour.png" style="width:100%;">
+    <div class="col-md-5">
+      <img src="assets/img/tour.png">
     </div>
-    <div class="col-md-6">
-      <img src="assets/img/tour2.png" style="width:100%;">
+    <div class="col-md-1">
+      <=>
+    </div>
+    <div class="col-md-5">
+      <img src="assets/img/tour2.png">
     </div>
   </div>
 </div>
