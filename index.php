@@ -62,15 +62,14 @@ $is_mobile = preg_match('/android|webos|iphone|ipad|ipod|blackberry|iemobile|ope
 <hr>
 <iframe src="https://player.vimeo.com/video/83602545?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="player1"></iframe>
 <iframe src="https://player.vimeo.com/video/83602546" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="player2"></iframe>
-<div>
+<div style="margin-top: 30px;">
   <h3>用你的手機來控制影片吧！</h3>
   <h5>用手機打開網址 <a href="http://creative.even.pw/">http://creative.even.pw/</a>，透過旋轉來控制影片</h5>
-  <div class="row">
+  <div class="row well">
     <div class="col-md-5">
       <img src="assets/img/tour.png">
     </div>
-    <div class="col-md-1">
-      <=>
+    <div class="col-md-1" style="font-size: 50px; font-weight: bold; margin-top: 7%;"> <=>
     </div>
     <div class="col-md-5">
       <img src="assets/img/tour2.png">
