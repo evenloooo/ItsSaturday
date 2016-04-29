@@ -59,12 +59,12 @@ $is_mobile = preg_match('/android|webos|iphone|ipad|ipod|blackberry|iemobile|ope
 </div>
 <?} else {?>
 <h3 class="mobileTitle">
-   Rotate your mobile !!!
+   向左轉，向右轉。
 </h3>
 <?}?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="assets/js/<?=$is_mobile?'mobile':'desktop'?>.js"></script>
+<script src="assets/js/<?=$is_mobile?'mobile':'desktop'?>.js?v=1"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
