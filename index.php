@@ -63,10 +63,10 @@ $is_mobile = preg_match('/android|webos|iphone|ipad|ipod|blackberry|iemobile|ope
   <h5>用手機打開網址 <a href="http://creative.even.pw/">http://creative.even.pw/</a>，透過旋轉來控制影片</h5>
   <div class="row">
     <div class="col-md-6">
-      <img src="assets/img/tour.png" style="width:50%;">
+      <img src="assets/img/tour.png" style="width:100%;">
     </div>
     <div class="col-md-6">
-      <img src="assets/img/tour2.png" style="width:50%;">
+      <img src="assets/img/tour2.png" style="width:100%;">
     </div>
   </div>
 </div>
