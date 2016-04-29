@@ -31,6 +31,7 @@ function updateOrientation() {
     doSend(JSON.stringify(socket_data));
     break;
 }
+}
 
 // $(window).on("orientationchange",function(){
 //  socket_data['message'] = 'switchIndexVideo';
