@@ -20,7 +20,6 @@ function doSend(message) {
 window.addEventListener("load", init, false);
 
 window.onorientationchange=updateOrientation;
-​
 function updateOrientation() {
   switch(window.orientation){
     case -90:
