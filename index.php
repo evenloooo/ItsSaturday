@@ -18,7 +18,7 @@ function check_user_agent ( $type = NULL ) {
                 // matches popular mobile devices that have small screens and/or touch inputs
                 // mobile devices have regional trends; some of these will have varying popularity in Europe, Asia, and America
                 // detailed demographics are unknown, and South America, the Pacific Islands, and Africa trends might not be represented, here
-                if ( preg_match ( "/phone|iphone|itouch|ipod|symbian|android|htc_|htc-|palmos|blackberry|opera mini|iemobile|windows ce|nokia|fennec|hiptop|kindle|mot |mot-|webos\/|samsung|sonyericsson|^sie-|nintendo/", $user_agent ) ) {
+                if ( preg_match ( "/phone|iphone|itouch|symbian|android|htc_|htc-|palmos|blackberry|opera mini|iemobile|windows ce|nokia|fennec|hiptop|kindle|mot |mot-|webos\/|samsung|sonyericsson|^sie-|nintendo/", $user_agent ) ) {
                         // these are the most common
                         return true;
                 } else if ( preg_match ( "/mobile|pda;|avantgo|eudoraweb|minimo|netfront|brew|teleca|lg;|lge |wap;| wap /", $user_agent ) ) {
