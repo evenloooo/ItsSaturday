@@ -64,7 +64,7 @@ $is_mobile = preg_match('/android|webos|iphone|ipad|ipod|blackberry|iemobile|ope
 <?}?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="assets/js/<?=$is_mobile?'mobile':'desktop'?>.js?v=3"></script>
+<script src="assets/js/<?=$is_mobile?'mobile':'desktop'?>.js?v=4"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

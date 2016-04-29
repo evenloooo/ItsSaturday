@@ -19,21 +19,21 @@ function doSend(message) {
 
 window.addEventListener("load", init, false);
 
-window.onorientationchange=updateOrientation;
-function updateOrientation() {
-  switch(window.orientation){
-    case -90:
-    socket_data['message'] = 'switchIndexVideo';
-    doSend(JSON.stringify(socket_data));
-    break;
-    case 90:
-    socket_data['message'] = 'switchIndexVideo';
-    doSend(JSON.stringify(socket_data));
-    break;
-}
-}
+// window.onorientationchange=updateOrientation;
+// function updateOrientation() {
+//   switch(window.orientation){
+//     case -90:
+//     socket_data['message'] = 'switchIndexVideo';
+//     doSend(JSON.stringify(socket_data));
+//     break;
+//     case 90:
+//     socket_data['message'] = 'switchIndexVideo';
+//     doSend(JSON.stringify(socket_data));
+//     break;
+// }
+// }
 
-// $(window).on("orientationchange",function(){
-//  socket_data['message'] = 'switchIndexVideo';
-//  doSend(JSON.stringify(socket_data));
-// });
+$(window).on("orientationchange",function(){
+ socket_data['message'] = 'switchIndexVideo';
+ doSend(JSON.stringify(socket_data));
+});
